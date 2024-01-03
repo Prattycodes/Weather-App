@@ -87,6 +87,12 @@
         searchBtn.addEventListener("click", ()=>{
             checkWeather(searchBox.value);
         })
+        searchBox.addEventListener("keyup", (event) => {
+        // Check if the Enter key was pressed (keyCode 13)
+        if (event.keyCode === 13) {
+            checkWeather(searchBox.value);
+        }
+    })
     </script>
 </body>
 </html>
