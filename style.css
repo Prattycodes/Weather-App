@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: #222;
 }
-.card{
+
+.card {
     width: 90%;
     max-width: 470px;
     background: linear-gradient(135deg, #00feba, #5b548a);
@@ -18,77 +21,155 @@ body{
     padding: 40px 35px;
     text-align: center;
 }
-.search{
+
+.search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.search input{
+
+.search input {
     border: 0;
     outline: 0;
     background: #ebfffc;
     color: #555;
-    padding: 10px 25px;
-    height: 60px;
-    border-radius: 30px;
+    padding: 10px 15px; /* Adjusted padding for mobile */
+    height: 40px; /* Adjusted height for mobile */
+    border-radius: 20px; /* Adjusted border-radius for mobile */
     flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+    margin-right: 8px; /* Adjusted margin for mobile */
+    font-size: 14px; /* Adjusted font-size for mobile */
 }
-.search button{
+
+.search button {
     border: 0;
     outline: 0;
     background: #ebfffc;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 40px; /* Adjusted width for mobile */
+    height: 40px; /* Adjusted height for mobile */
     cursor: pointer;
 }
-.search button img{
-    width: 16px;
+
+.search button img {
+    width: 12px; /* Adjusted width for mobile */
 }
-.weather-icon{
-    width: 170px;
-    margin-top: 30px;
+
+.weather-icon {
+    width: 120px; /* Adjusted width for mobile */
+    margin-top: 20px; /* Adjusted margin-top for mobile */
 }
-.weather h1{
-    font-size: 80px;
+
+.weather h1 {
+    font-size: 40px; /* Adjusted font-size for mobile */
     font-weight: 500;
 }
-.weather h2{
-    font-size: 45px;
+
+.weather h2 {
+    font-size: 24px; /* Adjusted font-size for mobile */
     font-weight: 400;
-    margin-top: -10px;
+    margin-top: -8px; /* Adjusted margin-top for mobile */
 }
-.details{
+
+.details {
     display: flex;
+    flex-direction: column; /* Adjusted flex-direction for mobile */
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
+    padding: 0 10px; /* Adjusted padding for mobile */
+    margin-top: 30px; /* Adjusted margin-top for mobile */
 }
-.col{
+
+.col {
     display: flex;
     align-items: center;
     text-align: left;
+    margin-bottom: 10px; /* Adjusted margin-bottom for mobile */
 }
-.col img{
-    width: 40px;
-    margin-right: 10px;
-}
-.humidity, .wind{
-    font-size: 28px;
-    margin-top: -6px;
-}
-.weather{
-    display: none;
 
+.col img {
+    width: 30px; /* Adjusted width for mobile */
+    margin-right: 8px; /* Adjusted margin-right for mobile */
 }
-.error{
+
+.humidity,
+.wind {
+    font-size: 18px; /* Adjusted font-size for mobile */
+    margin-top: -4px; /* Adjusted margin-top for mobile */
+}
+
+.weather {
+    display: none;
+}
+
+.error {
     text-align: left;
     margin-left: 10px;
-    font-size: 10px;
+    font-size: 12px; /* Adjusted font-size for mobile */
     margin-top: 10px;
     display: none;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .card {
+        padding: 30px 20px; /* Adjusted padding for mobile */
+    }
+
+    .search input {
+        padding: 10px 15px; /* Retaining adjusted padding for mobile */
+        height: 40px; /* Retaining adjusted height for mobile */
+        border-radius: 20px; /* Retaining adjusted border-radius for mobile */
+        margin-right: 0; /* Removed margin-right for mobile */
+    }
+
+    .search button {
+        width: 40px; /* Retaining adjusted width for mobile */
+        height: 40px; /* Retaining adjusted height for mobile */
+    }
+
+    .search button img {
+        width: 12px; /* Retaining adjusted width for mobile */
+    }
+
+    .weather-icon {
+        width: 120px; /* Retaining adjusted width for mobile */
+        margin-top: 20px; /* Retaining adjusted margin-top for mobile */
+    }
+
+    .weather h1 {
+        font-size: 40px; /* Retaining adjusted font-size for mobile */
+        font-weight: 500;
+    }
+
+    .weather h2 {
+        font-size: 24px; /* Retaining adjusted font-size for mobile */
+        font-weight: 400;
+        margin-top: -8px; /* Retaining adjusted margin-top for mobile */
+    }
+
+    .details {
+        padding: 0 10px; /* Retaining adjusted padding for mobile */
+        margin-top: 30px; /* Retaining adjusted margin-top for mobile */
+    }
+
+    .col {
+        margin-bottom: 10px; /* Retaining adjusted margin-bottom for mobile */
+    }
+
+    .col img {
+        width: 30px; /* Retaining adjusted width for mobile */
+        margin-right: 8px; /* Retaining adjusted margin-right for mobile */
+    }
+
+    .humidity,
+    .wind {
+        font-size: 18px; /* Retaining adjusted font-size for mobile */
+        margin-top: -4px; /* Retaining adjusted margin-top for mobile */
+    }
+
+    .error {
+        font-size: 12px; /* Retaining adjusted font-size for mobile */
+    }
 }
